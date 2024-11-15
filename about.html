@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="sv">
+<head>
+    <!-- Anger teckenkodning för dokumentet -->
+    <meta charset="UTF-8">
+    <!-- Gör sidan responsiv för olika skärmstorlekar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titeln som visas i webbläsarens flik -->
+    <title>Om Oss</title>
+    <!-- Länkar till externa CSS-filer för styling -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Huvudrubrik för sidan -->
+        <h1>Om Oss</h1>
+        <!-- Beskrivning av teamet -->
+        <p>Vi är ett team av spelentusiaster som vill hjälpa andra att hålla koll på sina spel och uppgifter.</p>
+        
+        <nav>
+            <!-- Mobilmenyknapp för att visa navigationsmenyn -->
+            <div class="mobile-menu" id="mobile-menu">
+                <i class="fas fa-bars"></i> <!-- Ikon för mobilmeny -->
+            </div>
+            
+            <!-- Navigationsmeny med knappar -->
+            <nav class="nav-list" id="nav-list">
+                <!-- Knapp för att navigera tillbaka till välkomstsidan -->
+                <button class="nav-button" onclick="location.href='Gaminghtml.html'">
+                    <i class="fas fa-list"></i> Tillbaka till Välkommen
+                </button>
+                <!-- Knapp för att navigera till Todo Lista -->
+                <button class="nav-button" onclick="location.href='todolist.html'">
+                    <i class="fas fa-info-circle"></i> Todo Lista
+                </button>
+            </nav> 
+        </nav> 
+    </div>
+    <!-- Länkar till extern JavaScript-fil för interaktivitet -->
+    <script src="script.js"></script> 
+</body>
+</html>

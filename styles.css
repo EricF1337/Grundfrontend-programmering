@@ -1,0 +1,88 @@
+ /* Grundläggande stil för body-elementet */
+body {
+    font-family: 'Roboto', sans-serif; /* Anger typsnitt för texten */
+    background-image: url('pexels-photo-4792728.jpg'); /* Sätter bakgrundsbild */
+    background-size: cover; /* Gör så att bakgrundsbilden täcker hela ytan */
+    background-position: center; /* Centrerar bakgrundsbilden */
+    margin: 0; /* Tar bort standardmarginaler */
+    padding: 20px; /* Lägger till padding runt body */
+}
+
+/* Stil för container-elementet */
+.container {
+    max-width: 800px; /* Maximal bredd på containern */
+    margin: auto; /* Centrerar containern horisontellt */
+    background: rgba(30, 30, 30, 0.9); /* Mörk bakgrund med transparens */
+    padding: 40px; /* Padding inuti containern */
+    border-radius: 15px; /* Rundar hörnen */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Lägger till skugga */
+    text-align: center; /* Centrerar texten inuti containern */
+    color: #fff; /* Sätter textfärgen till vit */
+}
+
+/* Stil för h1-elementet */
+h1 {
+    color: #FF6F61; /* Sätter färg på rubriken */
+    font-size: 2.5em; /* Anger storlek på rubriken */
+    margin-bottom: 20px; /* Utrymme under rubriken */
+}
+
+/* Stil för textfält */
+input[type="text"] {
+    width: calc(100% - 22px); /* Full bredd minus padding och border */
+    padding: 12px; /* Padding inuti textfältet */
+    margin: 10px 0; /* Utrymme ovanför och under textfältet */
+    border: 1px solid #ccc; /* Grå kantlinje */
+    border-radius: 5px; /* Rundar hörnen på textfältet */
+    font-size: 1em; /* Anger textstorlek */
+}
+
+/* Stil för knappar */
+button {
+    background-color: #FF6F61; /* Bakgrundsfärg på knappen */
+    color: white; /* Textfärg på knappen */
+    border: none; /* Ingen kantlinje */
+    border-radius: 5px; /* Rundar hörnen på knappen */
+    padding: 10px 20px; /* Padding inuti knappen */
+    cursor: pointer; /* Ändrar muspekaren till hand */
+    font-size: 1.2em; /* Anger textstorlek */
+    transition: background-color 0.3s, transform 0.3s; /* Lägger till övergångseffekter */
+}
+
+/* Stil för knappen vid hover-effekt */
+button:hover {
+    background-color: #FF4C4C; /* Ändrar bakgrundsfärg vid hover */
+    transform: scale(1.05); /* Förstorar knappen något vid hover */
+}
+
+/* Stil för navigationslistan */
+.nav-list {
+    display: none; /* Döljer navigationslistan som standard */
+    flex-direction: column; /* Staplar knappar vertikalt */
+    align-items: center; /* Centrerar knapparna horisontellt */
+    margin-top: 10px; /* Utrymme ovanför navigationslistan */
+}
+
+/* Aktiv stil för navigationslistan */
+.nav-list.active {
+    display: flex; /* Visar navigationslistan när den är aktiv */
+}
+
+/* Stil för navigationsknappar */
+.nav-button {
+    background-color: #FF6F61; /* Bakgrundsfärg på navigationsknappar */
+    color: white; /* Textfärg på navigationsknappar */
+    border: none; /* Ingen kantlinje */
+    border-radius: 5px; /* Rundar hörnen på knapparna */
+    padding: 10px 20px; /* Padding inuti knapparna */
+    cursor: pointer; /* Ändrar muspekaren till hand */
+    font-size: 1em; /* Anger textstorlek */
+    margin: 5px 0; /* Utrymme ovanför och under knapparna */
+}
+
+/* Nya stilar för uppgiftsobjekt */
+.task-item {
+    display: flex; /* Använder flexbox för layout */
+    flex-direction: column; /* Staplar text och knapp vertikalt */
+    align-items: flex-start; /* Justerar objekt till vänster */
+    margin
